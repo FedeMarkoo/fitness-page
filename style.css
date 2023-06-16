@@ -1,0 +1,233 @@
+/* FONTS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #333333;
+}
+
+button {
+    width: 100%;
+    border: none;
+    margin: 2px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #0088cc;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006699;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #333333;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background-color: #0088cc;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rest {
+    background-color: #aee1ea;
+}
+
+.interval {
+    background-color: #ff9c9c;
+}
+
+.round {
+    background-color: #a6e6a8;
+}
+
+/* NEW CSS */
+#exercise-list {
+    flex: 1;
+    margin-left: 45%;
+}
+
+#workTime-bar,
+#rest-bar,
+#exercise-detail {
+    display: none;
+}
+
+#actual {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#controls {
+    position: fixed;
+    top: 110px;
+    width: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#status-controls {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.progress-bar {
+    width: 90%;
+}
+
+#exercise-description {
+    height: 519px;
+}
+
+#sub-container {
+    margin: 0 auto;
+    display: flex;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 30px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+table tbody+tbody {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+table tbody,
+table thead {
+    display: block;
+}
+
+table tbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#activos tbody {
+    height: 150px;
+}
+
+#elegir tbody {
+    height: 400px;
+    text-align: center;
+}
+
+#activos th,
+#activos td {
+    width: 99999px
+}
+
+#routine-buttons button {
+    width: 100px;
+}
+
+#routine-buttons {
+    display: contents;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#elegir td {
+    width: 1%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #282727;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#gif{
+    display: grid; 
+    place-items: center;
+}

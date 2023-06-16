@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Workout Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="ejercicios.js"></script>
+  <script src="description-gif.js"></script>
+  <script src="exerciseFuntions.js"></script>
+  <script src="listeners.js"></script>
+  <script src="rutinas.js"></script>
+  <script src="rutinasFuntions.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9539925001427007"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div>
+      <h1>Workout Timer</h1>
+    </div>
+    <br />
+    <div id="sub-container">
+      <div id="controls">
+        <div id="status-controls">
+          <button id="start">Comenzar</button>
+          <button id="pause">Pausa</button>
+          <button id="reset">Parar</button>
+        </div>
+        <div id="actual">Ejercicio:</div>
+        <div id="exercise-detail">
+          <div id="round-bar" class="progress-bar">
+            <a>Rondas </a><a id="roundNum">0</a>
+            <div id="round-progress" class="progress-bar round"></div>
+          </div>
+          <div id="workTime-bar" class="progress-bar">
+            <a>Ejercitar </a><a id="workTime">30</a> <a> segundos</a>
+            <div id="interval-progress" class="progress-bar interval"></div>
+          </div>
+          <div id="rest-bar" class="progress-bar">
+            <a>Descansar </a><a id="restTime">10</a> <a> segundos</a>
+            <div id="rest-progress" class="progress-bar rest"></div>
+          </div>
+        </div>
+        <div id="exercise-description">
+          <div id="description"></div>
+          <div id="gifs"></div>
+        </div>
+      </div>
+
+      <div id="exercise-list">
+        <div>
+          <label for="rounds">Repeticiones:</label>
+          <input id="rounds" type="number" name="rounds" value="4">
+          <label for="ejerTime">Ejercitar(seg):</label>
+          <input id="ejerTime" type="number" name="rounds" value="30">
+          <label for="restTimeIni">Descansar(seg):</label>
+          <input id="restTimeIni" type="number" name="rounds" value="10">
+        </div>
+        <div id="routine-buttons">
+        </div>
+        <div>
+          <div>
+            <table id="activos">
+              <thead>
+                <tr>
+                  <th>Ejercicio</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <table id="elegir">
+            <tr>
+              <th></th>
+              <th>Ejercicio</th>
+              <th>Enfoque muscular</th>
+              <th>Tipo de ejercicio</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
